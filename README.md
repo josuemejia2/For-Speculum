@@ -60,7 +60,7 @@ ACTIVE
 
 ---
 
-## Fundamento_Matenatico.md
+## Fundamento_Matematico.md
 Ecuaciones y modelos matenaticos del sistema aun en desarrollo
 
 RAW:
