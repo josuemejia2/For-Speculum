@@ -64,8 +64,7 @@ ACTIVE
 Ecuaciones y modelos matenaticos del sistema aun en desarrollo
 
 RAW:
-https://github.com/josuemejia2/For-Speculum/blob/main/Fundamento_Matematico.md?plain=1
-
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Fundamento_Matematico.md
 STATUS:
 ACTIVE
 
