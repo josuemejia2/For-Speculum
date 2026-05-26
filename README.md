@@ -1,12 +1,19 @@
 # 🧠 FOR-SPECULUM
 
-Sistema modular de observación y arquitectura estructural.
+Sistema modular de observación, validación y arquitectura estructural.
+
+STATUS: ACTIVE  
+MODE: LECTURA ESTRUCTURAL  
+STATE: RECONSTRUCCIÓN MODULAR ACTIVA
 
 ---
 
-# CORE
+# 📚 MODULES
 
-## CORE.md
+## CORE
+
+### CORE.md
+ENGINE documental y sistema de reconstrucción estructural.
 
 RAW:
 https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/CORE.md
@@ -16,9 +23,10 @@ ACTIVE
 
 ---
 
-# PARADIGMA
+## PARADIGMA
 
-## Paradigma.md
+### Paradigma.md
+Marco universal de lectura, equivalencia funcional y traducción estructural.
 
 RAW:
 https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Paradigma.md
@@ -26,5 +34,55 @@ https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Paradigma.md
 STATUS:
 ACTIVE
 
-DESCRIPTION:
-Marco universal de lectura estructural, equivalencia funcional y arquitectura contextual.
+---
+
+## MANUAL
+
+### Manual.md
+Protocolo operativo universal del sistema FOR-SPECULUM.
+
+RAW:
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Manual.md
+
+STATUS:
+ACTIVE
+
+---
+
+# 🧠 FLOW
+
+PERCEPCIÓN
+↓
+CLASIFICACIÓN
+↓
+VALIDACIÓN
+↓
+EJECUCIÓN
+↓
+CORRECCIÓN
+↓
+INTEGRACIÓN
+
+---
+
+# 🛡️ PRINCIPIOS
+
+- evidencia > narrativa
+- reversibilidad
+- validación estructural
+- preservación de contexto
+- no inferencia
+- coherencia global
+
+---
+
+# 🔄 SYSTEM ARCHITECTURE
+
+FOR-SPECULUM
+├── CORE
+├── PARADIGMA
+├── MANUAL
+├── SPECULUM
+├── BITÁCORA
+├── VALIDACIÓN
+└── CUSTODIA
