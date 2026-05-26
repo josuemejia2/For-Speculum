@@ -29,7 +29,7 @@ ACTIVE
 Marco universal de lectura, equivalencia funcional y traducción estructural.
 
 RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Paradigma.md
+https://github.com/josuemejia2/For-Speculum/blob/main/Paradigma.md?plain=1
 
 STATUS:
 ACTIVE
