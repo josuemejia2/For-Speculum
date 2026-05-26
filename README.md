@@ -36,6 +36,16 @@ ACTIVE
 
 ---
 
+## Legacy
+
+Raw:
+https://github.com/josuemejia2/For-Speculum/blob/main/Legacy.md
+
+STATUS:
+ACTIVE
+
+---
+
 ## MANUAL
 
 ### Manual.md
