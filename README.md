@@ -54,7 +54,7 @@ ACTIVE
 Protocolo operativo universal del sistema FOR-SPECULUM.
 
 RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Manual.md
+https://github.com/josuemejia2/For-Speculum/blob/main/Manual.md?plain=1
 
 STATUS:
 ACTIVE
