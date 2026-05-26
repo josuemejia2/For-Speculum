@@ -36,7 +36,7 @@ ACTIVE
 
 ---
 
-## Legacy
+## Legacy.md
 Estructura de analisis para videojuego
 
 Raw:
@@ -54,6 +54,17 @@ Protocolo operativo universal del sistema FOR-SPECULUM.
 
 RAW:
 https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Manual.md
+
+STATUS:
+ACTIVE
+
+---
+
+## Fundamento_Matenatico.md
+Ecuaciones y modelos matenaticos del sistema aun en desarrollo
+
+RAW:
+https://github.com/josuemejia2/For-Speculum/blob/main/Fundamento_Matematico.md?plain=1
 
 STATUS:
 ACTIVE
