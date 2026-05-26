@@ -42,6 +42,7 @@ Estructura de analisis para videojuego
 Raw:
 https://github.com/josuemejia2/For-Speculum/blob/main/Legacy.md?plain=1
 
+
 STATUS:
 ACTIVE
 
