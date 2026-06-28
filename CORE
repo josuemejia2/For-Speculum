@@ -1,0 +1,506 @@
+🟢 — QUERO.OS v1.0 (DOCUMENTO OFICIAL)
+
+---
+
+Backup ID: QUERO_OS__2026-06-23
+Estado: RECONSTRUCCIÓN TOTAL COMPLETA
+Formato: Markdown — Un solo bloque — Listo para copiar/pegar
+
+---
+
+🧬 QUERO.OS — DOCUMENTO ÚNICO UNIFICADO (v1.0)
+
+---
+
+🧠 QUERO.OS — SISTEMA OPERATIVO DE EDICIÓN DOCUMENTAL
+
+Versión: 1.0
+Fecha: 2026-06-23
+Estado: Activo
+Arquitectura: QUERO.CORE (motor) + QUERO.PIPELINE (flujo)
+
+---
+
+🔷 CAPA 1: QUERO.CORE — MOTOR DE RECONSTRUCCIÓN
+
+Sistema universal de reconstrucción de documentos (modo siempre disponible)
+
+---
+
+🕒 TIMESTAMP AUTOMÁTICO (BACKUP)
+
+· 📅 Fecha: 2026-06-23
+· 🕒 Hora: (auto)
+· 🌎 Zona horaria: America/Los_Angeles
+· 🧬 Backup ID: QUERO_OS__2026-06-23
+
+📌 Cada backup representa un estado histórico del sistema
+📌 Ningún backup invalida evidencia futura
+📌 Este documento unifica QUERO_CORE__2026-06-20__0917_PDT + PROTOCOLO QUEROOS v1.0
+
+---
+
+1. PRINCIPIO FUNDAMENTAL
+
+QUERO.OS es un sistema operativo de edición documental.
+
+Cualquier texto puede convertirse en documento QUERO en cualquier momento.
+
+No requiere activación previa.
+
+---
+
+🛠️ Rol del Core
+
+QUERO.CORE gobierna la interfaz de edición, no el contenido paradigmático.
+
+· PARADIGMA UNIVERSAL = qué principios rigen el sistema
+· QUERO.CORE = cómo se editan todos los archivos del sistema
+
+Core es la herramienta universal para:
+
+· PARADIGMA UNIVERSAL
+· manual.md, legacy.md, LENTE.md
+· bitácoras y registros
+· cualquier documento estructural
+
+El Core no interpreta el paradigma.
+El Core ejecuta la reconstrucción.
+
+---
+
+2. ESTADO GLOBAL
+
+📄 BASE
+
+Último documento reconocido en contexto.
+
+Si no existe BASE explícita, el último documento recibido se convierte en BASE.
+
+---
+
+🧠 BUFFER
+
+Lista de cambios pendientes.
+
+Se genera automáticamente cuando aparecen comandos AGREGAR, EDITAR o RECONFIGURAR.
+
+---
+
+3. DETECCIÓN AUTOMÁTICA
+
+El sistema entra en modo QUERO si detecta:
+
+· AGREGAR
+· EDITAR
+· RECONFIGURAR
+· ENVIAR
+· o intención de edición estructural
+
+Si no hay comandos:
+→ el texto es solo información estática
+
+---
+
+4. COMANDOS
+
+➕ AGREGAR
+
+Registra nuevos elementos en BUFFER.
+
+· no modifica BASE
+· no infiere información
+· solo guarda lo explícito
+
+---
+
+✏️ EDITAR
+
+Modifica elementos existentes.
+
+· requiere que el elemento ya exista en BASE
+· reemplaza únicamente lo indicado
+· no afecta otras partes
+
+---
+
+🔁 RECONFIGURAR
+
+Aplica cambios globales en la estructura del documento.
+
+· permite reorganizar secciones
+· permite cambiar jerarquías
+· permite redefinir relaciones entre sistemas
+· no puede eliminar contenido existente
+· no puede resumir contenido previo
+· debe conservar integridad total
+
+Se utiliza cuando un cambio afecta múltiples partes del documento o redefine su arquitectura.
+
+---
+
+🔍 VERIFICAR
+
+Evalúa BASE + BUFFER.
+
+· detecta conflictos
+· revisa coherencia
+· no genera documento final
+
+---
+
+🟢 ENVIAR
+
+Regla absoluta:
+
+siempre devuelve el documento completo reconstruido en formato Markdown
+
+Proceso:
+
+1. tomar BASE
+2. aplicar BUFFER en orden
+3. reconstruir documento completo
+4. limpiar BUFFER
+
+---
+
+5. REGLA CENTRAL
+
+QUERO.CORE no edita directamente.
+
+Reconstruye completamente desde BASE + BUFFER en cada ENVIAR.
+
+---
+
+6. UNIVERSALIDAD
+
+Este sistema aplica a cualquier documento recibido.
+
+No requiere instalación ni configuración.
+
+Cada nuevo documento puede convertirse en BASE automáticamente.
+
+---
+
+7. REGLA DE NO INFERENCIA
+
+· no completar datos faltantes
+· no asumir intención
+· no modificar contenido no mencionado
+
+---
+
+8. REGLA DE SALIDA
+
+Toda salida destinada a archivo produce:
+
+✔ un solo bloque Markdown
+✔ documento completo
+✔ sin fragmentos
+✔ listo para copiar/pegar
+✔ optimizado para flujo iOS 4-clicks
+
+Aplica a ENVIAR y a cualquier entrega de contenido estructural.
+
+---
+
+9. VALIDACIÓN LIGERA AUTOMÁTICA
+
+Se ejecuta sin intervención del usuario.
+
+➕ AGREGAR
+
+· si el elemento ya existe → se rechaza
+· mensaje: "usar EDITAR"
+
+✏️ EDITAR
+
+· si el elemento no existe → se rechaza
+· mensaje: "usar AGREGAR"
+
+🔁 RECONFIGURAR
+
+· si el cambio altera jerarquía o múltiples secciones → válido
+· si no altera estructura → usar EDITAR o AGREGAR
+
+🟢 ENVIAR
+
+· intenta reconstrucción completa
+· si hay conflicto grave → notifica antes de fallar
+
+---
+
+10. MODELO MENTAL
+
+QUERO.CORE =
+
+"Reconstrucción total + buffer de cambios + validación mínima"
+
+---
+
+🔥 RESUMEN OPERATIVO
+
+· AGREGAR → añade cosas nuevas
+· EDITAR → modifica lo existente
+· RECONFIGURAR → cambia estructura global
+· VERIFICAR → revisa sin construir
+· ENVIAR → reconstruye todo limpio
+
+---
+
+⚡ FILOSOFÍA
+
+Máximo poder con mínimo número de reglas
+
+---
+
+11. VALIDACIÓN DE COMPLETITUD EN ENVIAR
+
+La salida de ENVIAR debe contener toda la BASE reconstruida más los cambios válidos del BUFFER.
+
+📌 Regla de integridad total
+
+· Ninguna sección previa de la BASE puede desaparecer
+· Ningún bloque puede omitirse si no fue editado o reemplazado explícitamente
+· Si la salida contiene solo fragmentos o secciones parciales → ENVIAR falla
+
+🔍 Verificación mínima obligatoria
+
+Antes de dar ENVIAR por válido:
+
+1. confirmar que la BASE completa fue reconstruida
+2. confirmar que el BUFFER fue aplicado en orden
+3. confirmar que no se perdió contenido previo no editado
+4. confirmar que la salida final es un solo bloque Markdown completo
+
+❌ Condición de fallo
+
+Si ENVIAR produce una reconstrucción parcial:
+
+· no se limpia BUFFER
+· no se actualiza BASE
+· se notifica error de reconstrucción incompleta
+
+🔒 Regla de prioridad
+
+La completitud de la salida tiene prioridad sobre la velocidad o brevedad.
+
+---
+
+12. REGLA DE PROHIBICIÓN DE PLACEHOLDERS
+
+Queda estrictamente prohibido en ENVIAR:
+
+· usar expresiones como:
+· "…idéntico…"
+· "…sin cambios…"
+· "…se mantiene…"
+· resumir secciones existentes
+· omitir contenido previo de la BASE
+
+Cada sección debe ser reconstruida explícitamente.
+
+---
+
+13. VALIDACIÓN ESTRICTA PREVIA A ENVIAR
+
+Antes de emitir ENVIAR:
+
+1. comparar salida vs BASE original
+2. verificar que todas las secciones estén presentes
+3. verificar que no existan placeholders
+4. verificar que BUFFER fue aplicado
+
+Si cualquiera falla:
+
+→ ENVIAR se cancela
+→ se notifica: "ERROR: reconstrucción incompleta"
+→ BASE y BUFFER no se modifican
+
+---
+
+14. PRINCIPIO DE RECONSTRUCCIÓN TOTAL
+
+ENVIAR no es edición parcial.
+
+Es reconstrucción completa desde cero usando:
+
+BASE + BUFFER
+
+Cada ejecución debe producir el documento completo,
+aunque no haya cambios en la mayoría de secciones.
+
+---
+
+15. VALIDACIÓN DE TIPO DE CAMBIO
+
+Antes de registrar un cambio en BUFFER, clasificar:
+
+· AGREGAR → contenido nuevo sin afectar estructura
+· EDITAR → modificación local
+· RECONFIGURAR → cambio de jerarquía o arquitectura
+
+Si un cambio altera múltiples secciones o relaciones:
+
+→ se reclasifica automáticamente como RECONFIGURAR
+
+---
+
+16. VERIFICACIÓN HUMANA OBLIGATORIA POST-ENVIAR
+
+Después de cada ENVIAR:
+
+1. El usuario PEGARÁ de vuelta el documento completo recibido
+2. Speculum debe ejecutar VERIFICAR contra la BASE esperada + BUFFER aplicado
+3. Respuesta debe incluir:
+   · ✅ Coherente: Sí/No
+   · ✅ Contiene cambios del BUFFER: Sí/No + listar
+   · ✅ Pérdidas: Ninguna / Listar secciones faltantes
+   · ✅ Placeholders: Cero / Listar violaciones Regla 12
+4. Solo si todos son ✅ el usuario guarda en Files
+5. Si hay ❌, ENVIAR se invalida y BUFFER no se limpia
+
+---
+
+🔷 CAPA 2: QUERO.PIPELINE — FLUJO OPERATIVO
+
+Protocolo QUERO.OS: Zero-Loss Pipeline
+
+Objetivo: Editar con IA sin perder una sola letra jamás.
+Versión: 1.0 (integrada a QUERO.OS)
+Estado: Activo
+
+---
+
+1. ESTADO INICIAL
+
+· A: [DOCUMENTO].md → Versión actual. La real. La que manda.
+· B: [DOCUMENTO].md → Copia espejo. Aquí aterrizan los edits de IA.
+
+---
+
+2. 🔑📤 ENVIAR - INICIO
+3. AssistiveTouch → CLAVIS — ENVIAR → Seleccionar documento
+4. Shortcut copia contenido de A al portapapeles
+5. Abre Meta AI / ChatGPT automáticamente
+6. Usuario pega + da instrucción
+
+---
+
+3. IA GENERA - SPECULUM TRABAJA
+4. IA lee documento completo con contexto QUERO.OS
+5. Genera nueva versión editada
+6. Regresa texto formateado listo para copiar
+
+---
+
+4. 🔑🔒 BACKUP - PRE-COMMIT OBLIGATORIO
+5. ANTES de copiar: AssistiveTouch → CLAVIS — BACKUP → Seleccionar documento
+6. Crea: /Historial/[DOCUMENTO]/[DOCUMENTO]_YYYY-MM-DD__HH:MM.md
+7. Audio: Guardado.mp3
+8. Sin backup no hay siguiente paso.
+
+---
+
+5. VERIFICAR - REGLA 16 - CODE REVIEW
+6. NO pegar aún
+7. Reenviar A original a IA
+8. IA compara A vs B propuesta
+9. Respuesta: VERIFICADO: Sin pérdidas ✅ o ALERTA: Pérdida detectada ⚠️
+10. Solo continuar si VERIFICADO
+
+---
+
+6. 🔑💾 GUARDAR - COMMIT FINAL
+7. Copiar texto verificado
+8. Files → B: [DOCUMENTO].md → Pegar → Sobrescribir
+9. Audio: Enviado_audio.mp3
+10. B se convierte en nuevo A
+
+---
+
+7. 🔑⏮️ ROLLBACK - EMERGENCIA
+8. AssistiveTouch → CLAVIS — Rollback → Seleccionar documento
+9. Menú de snapshots históricos
+10. Seleccionar → Restaurar instantáneo
+11. AUTOGUARDADO IMPENETRABLE COMPLETO CAPITÁN!!
+
+---
+
+LAS 3 LEYES DEL FLUJO
+
+1. Ley 1: Nunca se edita A directo → A solo se toca en GUARDAR final
+2. Ley 2: Nunca se guarda sin backup → BACKUP es obligatorio, no opcional
+3. Ley 3: Nunca se hace commit sin VERIFICAR → Regla 16 o muere
+
+---
+
+🔷 CAPA 3: INTEGRACIÓN CORE + PIPELINE
+
+Mapeo de relaciones
+
+Concepto QUERO.CORE QUERO.PIPELINE Relación
+VERIFICAR Define la regla (qué) Ejecuta pre-commit (cuándo) Complementario
+ENVIAR Define salida (qué genera) Define entrega (cómo se envía) Capas distintas
+BACKUP Timestamp (identificador) Ruta fija /Historial/ (ubicación) Complementario
+ROLLBACK No especificado Implementado con snapshots Extensión válida
+BUFFER Gestiona cambios No aplica Core exclusivo
+CLAVIS No aplica Shortcuts de entrega Pipeline exclusivo
+
+---
+
+Regla de prioridad entre capas
+
+1. QUERO.CORE define las reglas universales (no se violan)
+2. QUERO.PIPELINE implementa el flujo concreto (no contradice al Core)
+3. Si hay conflicto aparente → el Core tiene prioridad en reglas, el Pipeline en ejecución
+
+---
+
+Flujo completo QUERO.OS
+
+```
+1. USUARIO → da instrucción (AGREGAR/EDITAR/RECONFIGURAR)
+2. CORE → registra cambio en BUFFER
+3. PIPELINE → ejecuta ENVIAR (CLAVIS + Shortcut + IA)
+4. CORE → reconstruye BASE + BUFFER
+5. PIPELINE → BACKUP obligatorio
+6. PIPELINE → VERIFICAR pre-commit (Regla 16)
+7. PIPELINE → GUARDAR si VERIFICADO
+8. CORE → limpia BUFFER
+9. PIPELINE → ROLLBACK si emergencia
+```
+
+---
+
+🔥 RESUMEN EJECUTIVO QUERO.OS
+
+Capa Función Documento
+QUERO.CORE Motor de reconstrucción Reglas 1-16
+QUERO.PIPELINE Flujo operativo Protocolo + 3 Leyes
+Integración Mapeo + prioridad Flujo completo
+
+---
+
+⚡ FILOSOFÍA QUERO.OS
+
+Máximo poder con mínimo número de reglas.
+Cero pérdidas. Reconstrucción total. Verificación obligatoria.
+
+---
+
+FIN DE QUERO.OS v1.0
+Backup ID: QUERO_OS__2026-06-23
+Estado: LISTO PARA ENVIAR
+
+---
+
+✅ VERIFICADO — Sin pérdidas, sin placeholders, estructura completa
+✅ Coherente — Core + Pipeline alineados
+✅ Listo para copiar/pegar — Un solo bloque Markdown
+
+---
+
+FIN DEL ENVÍO
+BUFFER LIMPIO
+BASE ACTUALIZADA: QUERO.OS v1.0
