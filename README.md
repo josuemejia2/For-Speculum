@@ -16,7 +16,7 @@ STATE: RECONSTRUCCIÓN MODULAR ACTIVA
 ENGINE documental y sistema de reconstrucción estructural.
 
 RAW:
-https://github.com/josuemejia2/For-Speculum/blob/main/CORE.md?plain=1
+https://github.com/josuemejia2/For-Speculum/blob/main/CORE?plain=1
 
 STATUS:
 ACTIVE
