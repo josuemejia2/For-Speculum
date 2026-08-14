@@ -71,6 +71,19 @@ ACTIVE
 
 ---
 
+## FE Y ORIGEN
+
+### Fe y Origen.md
+Acta de origen y fe del Sistema Quero — archivo maestro.
+
+RAW:
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Fe%20y%20Origen.md
+
+STATUS:
+INMUTABLE
+
+---
+
 # 🧠 FLOW
 
 PERCEPCIÓN
