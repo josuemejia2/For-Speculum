@@ -8,15 +8,30 @@ STATE: RECONSTRUCCIÓN MODULAR ACTIVA
 
 ---
 
+## 📌 Índice maestro (TOC)
+
+- [Modules](#modules)
+  - [CORE](#core)
+  - [PARADIGMA](#paradigma)
+  - [LEGACY](#legacymd)
+  - [MANUAL](#manual)
+  - [FUNDAMENTO_MATEMATICO](#fundamento_matematicomd)
+  - [FE Y ORIGEN](#fe-y-origen)
+- [FLOW](#-flow)
+- [PRINCIPIOS](#-principios)
+- [SYSTEM ARCHITECTURE](#-system-architecture)
+
+---
+
 # 📚 MODULES
 
 ## CORE
 
-### CORE.md
+### CORE (archivo: CORE)
 ENGINE documental y sistema de reconstrucción estructural.
 
 RAW:
-https://github.com/josuemejia2/For-Speculum/blob/main/CORE?plain=1
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/CORE
 
 STATUS:
 ACTIVE
@@ -29,19 +44,19 @@ ACTIVE
 Marco universal de lectura, equivalencia funcional y traducción estructural.
 
 RAW:
-https://github.com/josuemejia2/For-Speculum/blob/main/Paradigma.md?plain=1
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Paradigma.md
 
 STATUS:
 ACTIVE
 
 ---
 
-## Legacy.md
-Estructura de analisis para videojuego
+## LEGACY.md
 
-Raw:
-https://github.com/josuemejia2/For-Speculum/blob/main/Legacy.md?plain=1
+Estructura de análisis para videojuego.
 
+RAW:
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Legacy.md
 
 STATUS:
 ACTIVE
@@ -54,7 +69,7 @@ ACTIVE
 Protocolo operativo universal del sistema FOR-SPECULUM.
 
 RAW:
-https://github.com/josuemejia2/For-Speculum/blob/main/Manual.md?plain=1
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Manual.md
 
 STATUS:
 ACTIVE
@@ -62,10 +77,12 @@ ACTIVE
 ---
 
 ## Fundamento_Matematico.md
-Ecuaciones y modelos matenaticos del sistema aun en desarrollo
+
+Ecuaciones y modelos matemáticos del sistema — en desarrollo.
 
 RAW:
-https://github.com/josuemejia2/For-Speculum/blob/main/Fundamento_Matematico.md?plain=1
+https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Fundamento_Matematico.md
+
 STATUS:
 ACTIVE
 
