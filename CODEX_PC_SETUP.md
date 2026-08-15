@@ -57,6 +57,34 @@ Opcional:
 http://127.0.0.1:8000/PS3/
 ```
 
+## Portal terminal
+
+Para abrir el mini sistema terminal:
+
+```powershell
+.\danzariel.bat
+```
+
+Dentro del portal puedes usar:
+
+```text
+/ui
+/lab
+/PS3
+/server
+/start-server
+/url
+/files
+/note
+/help
+```
+
+Guia especifica:
+
+```text
+PORTAL_TERMINAL_PC.md
+```
+
 ## Para Codex PC
 
 Despues de `git pull`, verifica:
