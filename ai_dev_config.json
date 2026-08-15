@@ -1,0 +1,45 @@
+{
+  "ai_dev_config": {
+    "version": "1.0",
+    "description": "Configuración para AI Dev Workspace con Google Gemini",
+    
+    "model_settings": {
+      "model_name": "gemini-2.0-flash",
+      "temperature": 0.7,
+      "max_output_tokens": 4096,
+      "top_p": 0.95,
+      "alternative_models": {
+        "fast": "gemini-2.0-flash",
+        "balanced": "gemini-1.5-pro",
+        "powerful": "gemini-2.0-pro"
+      }
+    },
+    
+    "workspace_settings": {
+      "ignore_paths": ["env", "__pycache__", ".git", "sistemas_viejos", ".pytest_cache", "node_modules"],
+      "include_patterns": ["*.py", "*.json", "*.md", "*.txt", "*.yaml", "*.yml"],
+      "max_context_lines": 1500,
+      "max_file_size_kb": 500
+    },
+    
+    "editing_settings": {
+      "auto_backup": true,
+      "backup_dir": ".ai_dev_backups",
+      "confirm_before_edit": false,
+      "create_before_overwrite": true
+    },
+    
+    "session_settings": {
+      "save_history": true,
+      "history_file": ".ai_dev_session.json",
+      "max_history_messages": 100,
+      "clear_on_restart": false
+    },
+    
+    "prompts": {
+      "system_role": "Eres un desarrollador IA experto integrado en un workspace local Python.",
+      "edit_instruction": "Cuando necesites editar archivos, usa el formato [EDIT_FILE: ...] [END_EDIT]",
+      "context_instruction": "Siempre considera el contexto del workspace cuando generes soluciones."
+    }
+  }
+}

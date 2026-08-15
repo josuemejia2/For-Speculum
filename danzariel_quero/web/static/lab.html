@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DANZARIEL LAB</title>
+    <link rel="stylesheet" href="/static/lab.css?v=20260815-timeframes" />
+  </head>
+  <body>
+    <main class="lab-shell">
+      <header class="lab-header">
+        <div>
+          <p class="eyebrow">DANZARIEL-QUERO</p>
+          <h1>Laboratorio</h1>
+          <p class="tagline">Simuladores, calculadoras y juegos del Operador.</p>
+        </div>
+        <a class="home-link" href="/">Centro</a>
+      </header>
+
+      <section class="system-strip" aria-label="Estado del laboratorio">
+        <div><span>Modo</span><strong>Speculum Lab</strong></div>
+        <div><span>Custodia</span><strong id="custody-state">Vigilante</strong></div>
+        <div><span>Pulso</span><strong id="pulse-state">Listo</strong></div>
+        <div><span>Llave</span><strong>Operador</strong></div>
+      </section>
+
+      <nav class="lab-tabs" aria-label="Modulos de laboratorio">
+        <button class="lab-tab" data-view="custodia">&#128737;&#65039; Custodia</button>
+        <button class="lab-tab active" data-view="nodo">&#128200; Indicador Quero</button>
+        <button class="lab-tab" data-view="calc">&#129518; Calculadoras</button>
+        <button class="lab-tab" data-view="games">&#127918; Juegos</button>
+      </nav>
+
+      <section id="custodia-view" class="lab-view">
+        <div class="tool-grid">
+          <section class="tool-panel">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker">Speculum Trainer</p>
+                <h2>Custodia Lab</h2>
+              </div>
+              <span class="badge" id="custody-badge">🟡 Neutral</span>
+            </div>
+            <textarea id="custody-input" rows="5" placeholder="Escribe una frase: quiero entrar ya, voy a esperar confirmacion, necesito recuperar..."></textarea>
+            <div class="button-row">
+              <button id="custody-analyze">Analizar</button>
+              <button id="custody-sample" class="secondary">Ejemplo</button>
+            </div>
+            <div class="meter" aria-label="Nivel de ruido">
+              <span id="noise-fill"></span>
+            </div>
+            <div id="custody-output" class="readout">La custodia espera una frase.</div>
+          </section>
+
+          <section class="tool-panel compact">
+            <p class="panel-kicker">Regla Madre</p>
+            <h2>Filtro</h2>
+            <ul class="signal-list">
+              <li><strong>🚨 Urgencia</strong><span>no es señal.</span></li>
+              <li><strong>🕳️ Miedo</strong><span>no decide.</span></li>
+              <li><strong>🔥 Euforia</strong><span>no valida.</span></li>
+              <li><strong>🛡️ Disciplina</strong><span>pasa a verificar.</span></li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section id="nodo-view" class="lab-view active">
+        <section class="quero-console" aria-label="Sistema Quero indicador visual">
+          <div class="quero-topbar">
+            <div class="quero-brand">
+              <span class="q-mark">Q</span>
+              <div>
+                <p class="panel-kicker">Sistema Quero</p>
+                <h2>Indicador Visual</h2>
+              </div>
+            </div>
+            <div class="quero-actions">
+              <button id="nodo-source" class="ghost" type="button">SIMULADO</button>
+              <button id="nodo-api" class="ghost" type="button">&lt;/&gt; API</button>
+              <button id="nodo-pause" type="button">&#9208;&#65039; Pausar</button>
+            </div>
+          </div>
+
+          <div class="layer-block sensors-layer">
+            <div class="layer-title">Capa 1 - 8 sensores - termometro</div>
+            <div id="sensor-grid" class="sensor-grid"></div>
+
+            <div class="thermo-panel">
+              <div class="score-box">
+                <span>Score Quero</span>
+                <strong id="score-confirmations">0 / 8</strong>
+                <small>confirmaciones</small>
+              </div>
+              <div class="score-box regime-box">
+                <span>Termometro principal</span>
+                <strong id="score-value">0%</strong>
+                <small id="score-regime">mixto</small>
+              </div>
+              <div class="thermo-track-wrap">
+                <div id="thermo-dots" class="thermo-dots"></div>
+                <div class="thermo-track">
+                  <span id="thermo-fill"></span>
+                  <b id="thermo-marker">0%</b>
+                </div>
+                <div class="thermo-scale">
+                  <span>0% bajista extremo</span>
+                  <span>50% mixto</span>
+                  <span>100% alcista extremo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer-block chart-layer">
+            <div class="layer-title">Capa 2 - Indicador Quero EMA20/50 - Punto A hasta Punto B</div>
+            <div class="chart-shell">
+              <div class="chart-toolbar">
+                <div class="chart-legend" aria-label="Leyenda de grafica">
+                  <span class="legend-price">Precio</span>
+                  <span class="legend-ema20">EMA20</span>
+                  <span class="legend-ema50">EMA50</span>
+                  <span class="legend-positive">Positiva</span>
+                  <span class="legend-negative">Negativa</span>
+                </div>
+                <div class="chart-controls">
+                  <span id="timeframe-status" class="timeframe-status">Mundo activo 1m</span>
+                  <div class="chart-timeframes" aria-label="Timeframes de grafica">
+                    <button type="button" class="timeframe-btn active" data-timeframe="1m">1m</button>
+                    <button type="button" class="timeframe-btn" data-timeframe="5m">5m</button>
+                    <button type="button" class="timeframe-btn" data-timeframe="15m">15m</button>
+                    <button type="button" class="timeframe-btn" data-timeframe="1h">1h</button>
+                  </div>
+                </div>
+              </div>
+              <canvas id="nodo-canvas" width="1180" height="500" aria-label="Grafica simulada de Nodo Quero en movimiento"></canvas>
+            </div>
+            <div class="node-grid">
+              <div id="node-one" class="node-card good">
+                <span>Linea positiva</span>
+                <strong>0.00</strong>
+                <small>Cruce negativo EMA20/50</small>
+              </div>
+              <div id="node-two" class="node-card danger">
+                <span>Linea negativa</span>
+                <strong>0.00</strong>
+                <small>Cruce positivo EMA20/50</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer-block sequence-layer">
+            <div class="layer-title">Capa 3 - sensor alerta banda Bollinger 87</div>
+            <div id="sequence-grid" class="sequence-grid"></div>
+            <div class="sequence-status">
+              <div>
+                <span>Estado secuencia</span>
+                <strong id="sequence-title">Calculando estructura</strong>
+                <small id="sequence-copy">La simulacion espera 3/9, EMA20, MACD, Parabolica y Vela Inteligente.</small>
+              </div>
+              <div id="sequence-action">ESPERA ACTIVA</div>
+            </div>
+            <p class="quero-note">Capa 1 mantiene los 8 indicadores como sensores. Capa 3 crea una alerta cuando las condiciones se alinean y la Vela Inteligente activa el destino hacia la Banda de Bollinger; el MACD acompana la direccion.</p>
+          </div>
+        </section>
+      </section>
+
+      <section id="calc-view" class="lab-view">
+        <div class="tool-grid">
+          <section class="tool-panel">
+            <p class="panel-kicker">Trading</p>
+            <h2>Calculadora de Riesgo</h2>
+            <div class="form-grid">
+              <label>Capital<input id="capital" type="number" value="1000" min="0" step="10" /></label>
+              <label>Riesgo %<input id="risk-percent" type="number" value="1" min="0" step="0.1" /></label>
+              <label>Entrada<input id="entry" type="number" value="10" step="0.01" /></label>
+              <label>Stop<input id="stop" type="number" value="9.5" step="0.01" /></label>
+              <label>Target<input id="target" type="number" value="11" step="0.01" /></label>
+            </div>
+            <button id="risk-calc">Calcular</button>
+            <div id="risk-output" class="readout">Calcula riesgo, tamano y R.</div>
+          </section>
+
+          <section class="tool-panel">
+            <p class="panel-kicker">Rapido</p>
+            <h2>Porcentaje</h2>
+            <div class="form-grid">
+              <label>Valor inicial<input id="pct-a" type="number" value="100" step="0.01" /></label>
+              <label>Valor final<input id="pct-b" type="number" value="110" step="0.01" /></label>
+            </div>
+            <button id="pct-calc">Medir cambio</button>
+            <div id="pct-output" class="readout">Resultado pendiente.</div>
+          </section>
+        </div>
+      </section>
+
+      <section id="games-view" class="lab-view">
+        <div class="tool-grid">
+          <section class="tool-panel">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker">Juego de criterio</p>
+                <h2>Speculum Trial</h2>
+              </div>
+              <span class="badge" id="trial-score">0 / 0</span>
+            </div>
+            <div id="trial-card" class="trial-card"></div>
+            <div class="choice-grid">
+              <button data-choice="operar">Operar</button>
+              <button data-choice="esperar">Esperar</button>
+              <button data-choice="registrar">Registrar</button>
+              <button data-choice="verificar">Verificar</button>
+            </div>
+            <div id="trial-output" class="readout">Elige una respuesta.</div>
+          </section>
+
+          <section class="tool-panel compact">
+            <p class="panel-kicker">Stats</p>
+            <h2>Operador</h2>
+            <div class="stat-row"><span>Disciplina</span><b id="stat-disciplina">0</b></div>
+            <div class="stat-row"><span>Evidencia</span><b id="stat-evidencia">0</b></div>
+            <div class="stat-row"><span>Custodia</span><b id="stat-custodia">0</b></div>
+            <div class="stat-row"><span>Ruido</span><b id="stat-ruido">0</b></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/lab.js?v=20260815-timeframes"></script>
+  </body>
+</html>

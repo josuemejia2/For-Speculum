@@ -1,0 +1,1 @@
+"""QUERO intelligence layer."""

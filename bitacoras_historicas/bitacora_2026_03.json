@@ -1,0 +1,41 @@
+[
+  {
+    "fecha": "2026-03-01 00:21:24",
+    "tipo": "Entrada",
+    "intencion": 50.0,
+    "reaccion": 50.0,
+    "decision": 8.207206110335537,
+    "close": 21150.0,
+    "senal": "LONG",
+    "confianza": 95,
+    "motivo": "Entrada valida + confirmaciones tecnicas + confluencia",
+    "symbol": "BYBIT:BTCUSDT",
+    "timeframe": "5m"
+  },
+  {
+    "fecha": "2026-03-01 00:22:01",
+    "tipo": "Entrada",
+    "intencion": 50.0,
+    "reaccion": 50.0,
+    "decision": 8.207206110335537,
+    "close": 21150.0,
+    "senal": "LONG",
+    "confianza": 95,
+    "motivo": "Entrada valida + confirmaciones tecnicas + confluencia",
+    "symbol": "BYBIT:BTCUSDT",
+    "timeframe": "5m"
+  },
+  {
+    "fecha": "2026-03-01 01:42:15",
+    "tipo": "NoTrade",
+    "intencion": 40.0,
+    "reaccion": 58.0,
+    "decision": 2893.2837302653497,
+    "close": 66316.0,
+    "senal": "NO_TRADE",
+    "confianza": 33,
+    "motivo": "Regla de distancia invalida la operacion",
+    "symbol": "BYBIT:BTCUSDT",
+    "timeframe": "1m"
+  }
+]

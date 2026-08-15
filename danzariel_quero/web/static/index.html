@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DANZARIEL-QUERO</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">DANZARIEL-QUERO</p>
+          <h1>Centro</h1>
+          <p class="tagline">Speculum local con custodia, memoria y archivos.</p>
+        </div>
+        <div class="header-actions">
+          <a class="lab-link" href="/lab">🧬 Lab</a>
+          <span id="status" class="status">offline</span>
+        </div>
+      </header>
+
+      <section class="token-bar">
+        <input id="token" type="password" placeholder="Token privado" />
+        <button id="save-token">Entrar</button>
+      </section>
+
+      <section class="search-bar">
+        <input id="global-search" type="search" placeholder="Buscar en DANZARIEL..." />
+      </section>
+
+      <nav class="tab-bar" aria-label="Secciones">
+        <button class="tab-button active" data-view="recent">Recientes</button>
+        <button class="tab-button" data-view="browse">Explorar</button>
+        <button class="tab-button" data-view="inbox">Inbox</button>
+      </nav>
+
+      <section id="summary-card" class="summary-card"></section>
+
+      <section id="recent-view" class="view active">
+        <div class="section-heading">
+          <h2>Recientes</h2>
+          <button id="refresh-recent" class="ghost">Actualizar</button>
+        </div>
+        <ul id="recent-list" class="file-list"></ul>
+      </section>
+
+      <section id="browse-view" class="view">
+        <div class="section-heading">
+          <h2>Explorar</h2>
+          <select id="browse-area"></select>
+        </div>
+        <ul id="browse-list" class="file-list"></ul>
+      </section>
+
+      <section id="inbox-view" class="view">
+        <div class="section-heading">
+          <h2>Inbox</h2>
+          <button id="analyze-selected" class="ghost">Analizar</button>
+        </div>
+        <div id="analysis-card" class="analysis-card">Selecciona un archivo de inbox para analizar.</div>
+        <div class="decision-row">
+          <button id="accept-decision">Aceptar</button>
+          <button id="reject-decision" class="secondary">Rechazar</button>
+        </div>
+        <ul id="inbox-list" class="file-list"></ul>
+      </section>
+
+      <section id="search-view" class="view">
+        <div class="section-heading">
+          <h2>Resultados</h2>
+          <button id="clear-search" class="ghost">Cerrar</button>
+        </div>
+        <ul id="search-list" class="file-list"></ul>
+      </section>
+
+      <section class="quick-actions">
+        <label class="upload-action">
+          <input id="upload-file" type="file" capture="environment" />
+          <span>Subir</span>
+        </label>
+        <button id="new-note-button">Nota</button>
+      </section>
+
+      <section id="note-sheet" class="sheet hidden">
+        <div class="sheet-card">
+          <div class="section-heading">
+            <h2>Nueva nota</h2>
+            <button id="close-note" class="ghost">Cerrar</button>
+          </div>
+          <input id="note-title" type="text" placeholder="titulo.md" />
+          <textarea id="note-content" rows="8" placeholder="Escribe una idea, link o recordatorio..."></textarea>
+          <button id="save-note">Guardar en memoria</button>
+          <p id="note-result" class="hint"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

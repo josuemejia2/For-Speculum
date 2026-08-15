@@ -1,0 +1,12 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+python-dotenv==1.1.1
+pandas>=2.2
+streamlit>=1.36
+plotly>=5.22
+matplotlib>=3.8
+PySide6>=6.7
+google-genai>=1.0
+colorama>=0.4.6
+openai>=1.40

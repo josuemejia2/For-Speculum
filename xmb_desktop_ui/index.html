@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PS3 XMB OS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+    <div class="system-background" aria-hidden="true">
+      <div class="scanline"></div>
+      <div class="light-plane"></div>
+    </div>
+
+    <main class="shell-root" aria-label="PS3 style modular operating shell">
+      <header class="shell-header">
+        <div class="brand-lockup">
+          <span class="brand-mark">PS3</span>
+          <div>
+            <p class="eyebrow">XMB Modular Shell</p>
+            <h1>DANZARIEL OS</h1>
+          </div>
+        </div>
+        <div class="system-readout">
+          <span id="clock-readout">00:00</span>
+          <strong id="active-path">HOME / Nexus</strong>
+        </div>
+      </header>
+
+      <section class="xmb-stage">
+        <nav class="category-ribbon" aria-label="Categorias principales"></nav>
+        <div class="focus-lens" aria-hidden="true"></div>
+        <section class="content-plane">
+          <aside class="submenu-panel" aria-label="Submenu vertical"></aside>
+          <section class="module-panel" aria-live="polite"></section>
+        </section>
+      </section>
+
+      <footer class="shell-footer">
+        <span id="module-status">READY</span>
+        <span>MODULAR FOUNDATION</span>
+      </footer>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

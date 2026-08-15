@@ -1,140 +1,93 @@
-# 🧠 FOR-SPECULUM
+# Llave Sagrada / Sistema Quero
 
-Sistema modular de observación, validación y arquitectura estructural.
+## Sistema actual
 
-STATUS: ACTIVE  
-MODE: LECTURA ESTRUCTURAL  
-STATE: RECONSTRUCCIÓN MODULAR ACTIVA
+Estos archivos son los que quedaron activos en la raiz del proyecto:
 
----
+- `danzariel_quero/`: servidor local FastAPI, panel privado y Lab visual en `/lab`.
+- `quero/`: nucleo de clasificacion, memoria y sensores del sistema.
+- `xmb_desktop_ui/`: interfaz modular tipo PS3/XMB disponible en `/PS3/`.
+- `chat_terminal.py` y `danzariel.bat`: terminal bonito del sistema.
+- `robot_quero.py`: motor principal del robot, reglas, indicadores y guardado en bitacora.
+- `dashboard_tradingview.py`: dashboard Streamlit del robot con grafica embebida.
+- `control_plane.py`: entrada Streamlit para navegar entre Inicio, Robot y Paradigma.
+- `control_plane_app.py`: app de escritorio PySide6 del control plane.
+- `abrir_control_panel.bat`: launcher para abrir el panel como ventana de app.
 
-## 📌 Índice maestro (TOC)
+## Arranque portable en otra PC
 
-- [Modules](#modules)
-  - [CORE](#core)
-  - [PARADIGMA](#paradigma)
-  - [LEGACY](#legacymd)
-  - [MANUAL](#manual)
-  - [FUNDAMENTO_MATEMATICO](#fundamento_matematicomd)
-  - [FE Y ORIGEN](#fe-y-origen)
-- [FLOW](#-flow)
-- [PRINCIPIOS](#-principios)
-- [SYSTEM ARCHITECTURE](#-system-architecture)
+Primero crea el entorno:
 
----
+```powershell
+.\setup.bat
+```
 
-# 📚 MODULES
+Luego inicia el servidor:
 
-## CORE
+```powershell
+.\run_server.bat
+```
 
-### CORE (archivo: CORE)
-ENGINE documental y sistema de reconstrucción estructural.
+Abre el Lab:
 
-RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/CORE
+```text
+http://127.0.0.1:8000/lab
+```
 
-STATUS:
-ACTIVE
+Abre el XMB:
 
----
+```text
+http://127.0.0.1:8000/PS3/
+```
 
-## PARADIGMA
+Para la terminal:
 
-### Paradigma.md
-Marco universal de lectura, equivalencia funcional y traducción estructural.
+```powershell
+.\danzariel.bat
+```
 
-RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Paradigma.md
+## Datos activos
 
-STATUS:
-ACTIVE
+- `datos_ejemplo.csv`: velas de prueba.
+- `leyes.json`: leyes del sistema.
+- `bitacora.json`: bitacora principal.
+- `bitacoras_historicas/`: bitacoras por mes.
+- `conocimientos.json`: memoria/conocimiento guardado.
 
----
+## Carpetas
 
-## LEGACY.md
+- `clase1/`: notas y practica de PowerShell.
+- `.venv/`: entorno virtual generado por `setup.bat` en cada maquina. No se sube a Git.
+- `sistemas_viejos/`: versiones anteriores, pruebas, dashboards viejos y modulos que ya no forman parte del sistema actual.
 
-Estructura de análisis para videojuego.
+## Comandos utiles
 
-RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Legacy.md
+```powershell
+.\.venv\Scripts\python.exe robot_quero.py analizar --json
+```
 
-STATUS:
-ACTIVE
+```powershell
+.\.venv\Scripts\python.exe -m streamlit run control_plane.py
+```
 
----
+```powershell
+.\.venv\Scripts\python.exe control_plane_app.py
+```
 
-## MANUAL
+```powershell
+.\abrir_control_panel.bat
+```
 
-### Manual.md
-Protocolo operativo universal del sistema FOR-SPECULUM.
+## Control Panel
 
-RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Manual.md
+El panel principal usa una navegacion tipo XMB:
 
-STATUS:
-ACTIVE
+- `Control`: categorias principales del sistema.
+- `Robot`: tablero operativo de mercado.
+- `Documentos`: lectura por secciones de documentos maestros.
+- `Editor`: edicion por capas con backup automatico.
+- `Paradigma`: acceso rapido al marco universal.
 
----
+Documentos maestros integrados: Acta, Paradigma, Root Architecture, Protocolo, Manual, Legacy y Botones iOS.
 
-## Fundamento_Matematico.md
-
-Ecuaciones y modelos matemáticos del sistema — en desarrollo.
-
-RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Fundamento_Matematico.md
-
-STATUS:
-ACTIVE
-
----
-
-## FE Y ORIGEN
-
-### Fe y Origen.md
-Acta de origen y fe del Sistema Quero — archivo maestro.
-
-RAW:
-https://raw.githubusercontent.com/josuemejia2/For-Speculum/main/Fe%20y%20Origen.md
-
-STATUS:
-INMUTABLE
-
----
-
-# 🧠 FLOW
-
-PERCEPCIÓN
-↓
-CLASIFICACIÓN
-↓
-VALIDACIÓN
-↓
-EJECUCIÓN
-↓
-CORRECCIÓN
-↓
-INTEGRACIÓN
-
----
-
-# 🛡️ PRINCIPIOS
-
-- evidencia > narrativa
-- reversibilidad
-- validación estructural
-- preservación de contexto
-- no inferencia
-- coherencia global
-
----
-
-# 🔄 SYSTEM ARCHITECTURE
-
-FOR-SPECULUM
-├── CORE
-├── PARADIGMA
-├── MANUAL
-├── SPECULUM
-├── BITÁCORA
-├── VALIDACIÓN
-└── CUSTODIA
+El editor bloquea el Acta de Origen y Fe como solo lectura. Los demas documentos se guardan con copia previa en `document_backups/`.
