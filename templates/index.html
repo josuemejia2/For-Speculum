@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente Local</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-wrap">
+          <div class="brand-mark">AI</div>
+          <div>
+            <div class="brand-title">Asistente Local</div>
+            <div class="brand-subtitle">Offline + ChatGPT-style</div>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-label">Modo</div>
+          <div class="pill active">Activo</div>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="section-label">Contexto</div>
+          <ul class="side-list">
+            <li>Reglas base</li>
+            <li>Estilo de respuesta</li>
+            <li>Memoria local</li>
+            <li>Notas del usuario</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section small">
+          <div class="section-label">Archivos</div>
+          <ul class="side-list files">
+            {% for file in context_files %}
+              <li>{{ file }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="topbar">
+          <div class="title-wrap">
+            <div class="dot"></div>
+            <div class="header-title">Asistente Local</div>
+          </div>
+          <div class="status">Disponible</div>
+        </header>
+
+        <section id="chat-box" class="chat-box" aria-live="polite">
+          <div class="message assistant">
+            <div class="avatar">A</div>
+            <div class="bubble">
+              Hola, soy tu asistente local. Puedo ayudarte con respuestas, redacción, análisis, ideas, resumen de contenido y trabajo basado en tus archivos y reglas.
+            </div>
+          </div>
+        </section>
+
+        <form id="chat-form" class="composer">
+          <textarea id="message-input" rows="1" placeholder="Pregunta o pide lo que quieras..."></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

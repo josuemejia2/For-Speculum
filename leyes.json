@@ -1,0 +1,9 @@
+{
+  "Quero": "El precio siempre vuelve a rotación de EMAs. EMA3/9 es la rotación más fuerte. Rotaciones masivas dejan huella histórica. EMA3/9 positivo en devaluación fuera de bandas puede no regresar.",
+  "Capitán": "El mercado navega según su posición actual: cerca del máximo → busca máximo; cerca del mínimo → busca mínimo. Define dirección, no repetición.",
+  "Máximos": "Un máximo tocando una vez será tocado otra vez y otra, hasta que sea roto o invalidado. Los máximos son imanes de precio.",
+  "Mínimos": "Un mínimo tocado tiende a repetirse mientras no sea roto. Sirve como referencia estructural del mercado.",
+  "Jesús": "Precio sobre EMA20 + primer histograma MACD positivo → tocará banda de Bollinger. Si la banda está muy lejos → EMA50 actúa como banda real.",
+  "Trujillo": "Para continuidad, la vela debe abrir lejos de EMA20/50/200. Aplica solo a promedios mayores.",
+  "52 Semanas": "Toque o rechazo de EMA50 → tendencia sin límite. Marca decisiones de largo plazo."
+}
