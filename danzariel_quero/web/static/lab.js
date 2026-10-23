@@ -844,6 +844,18 @@ function buildSnapshot() {
     forcedDirection: forcedAlertDirection,
   });
   const bandAlert = updateBandAlertLifecycle(bandAlertCandidate, candles.at(-1), market.tick);
+  const sequenceScores = {
+    bullish:
+      Number(smartCandle.positive.passed) +
+      Number(psarSignal > 0) +
+      Number(macdSlope > 0.006) +
+      Number(last > ema20.at(-1)),
+    bearish:
+      Number(smartCandle.negative.passed) +
+      Number(psarSignal < 0) +
+      Number(macdSlope < -0.006) +
+      Number(last < ema20.at(-1)),
+  };
   const sequenceDirection = bandAlert.sequenceDirection;
   const sequence = bandAlert.items.map((item) => item.passed);
   const positiveLines = queroLines.filter((line) => line.polarity === "positive");
@@ -893,6 +905,7 @@ function buildSnapshot() {
     sequenceDirection,
     ema20Sensor,
     bandAlert,
+    sequenceScores,
     nodeOne,
     nodeTwo,
     queroLines,
@@ -1043,6 +1056,8 @@ function renderSequence(snapshot) {
     ${renderAlertChecklist(alert)}
     ${renderAlertDestination(alert)}
   `;
+  $("#sequence-bullish-score").textContent = `${snapshot.sequenceScores.bullish}/4`;
+  $("#sequence-bearish-score").textContent = `${snapshot.sequenceScores.bearish}/4`;
 
   const status = $(".sequence-status");
   status.classList.remove("bullish", "bearish", "mixed");
